@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Gadgets</title>
+    <link rel="stylesheet" href="styles_shop.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <h2 class="title">Types of Gadgets</h2>
+
+    <form id="gadgetForm">
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Types of Gadgets</th>
+                    <th>Model</th>
+                    <th>Price ($)</th>
+                    <th>Model ID</th>
+                    <th>Select Item</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tablets -->
+                <tr>
+                    <td rowspan="3" class="category-title">Tablets</td>
+                    <td>Apple Ipad Pro 2024</td>
+                    <td>5249.00</td>
+                    <td>A001</td>
+                    <td><input type="checkbox" name="item" value="Apple Ipad Pro 2024"></td>
+                    <td><input type="number" name="quantity_A001" min="1" max="10" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Apple Ipad Air 2024</td>
+                    <td>3149.00</td>
+                    <td>A002</td>
+                    <td><input type="checkbox" name="item" value="Apple Ipad Air 2024"></td>
+                    <td><input type="number" name="quantity_A002" min="1" max="10" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Apple Ipad Mini 2022</td>
+                    <td>2699.00</td>
+                    <td>A003</td>
+                    <td><input type="checkbox" name="item" value="Apple Ipad Mini 2022"></td>
+                    <td><input type="number" name="quantity_A003" min="1" max="10" value="1"></td>
+                </tr>
+                <!-- Watches -->
+                <tr>
+                    <td rowspan="3" class="category-title">Watches</td>
+                    <td>Apple Watch Series 9</td>
+                    <td>1899.00</td>
+                    <td>W001</td>
+                    <td><input type="checkbox" name="item" value="Apple Watch Series 9"></td>
+                    <td><input type="number" name="quantity_W001" min="1" max="10" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Apple Watch SE 2024</td>
+                    <td>1299.00</td>
+                    <td>W002</td>
+                    <td><input type="checkbox" name="item" value="Apple Watch SE 2024"></td>
+                    <td><input type="number" name="quantity_W002" min="1" max="10" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Apple Watch Ultra</td>
+                    <td>3499.00</td>
+                    <td>W003</td>
+                    <td><input type="checkbox" name="item" value="Apple Watch Ultra"></td>
+                    <td><input type="number" name="quantity_W003" min="1" max="10" value="1"></td>
+                </tr>
+                <!-- Laptops -->
+                <tr>
+                    <td rowspan="3" class="category-title">Laptops</td>
+                    <td>Apple MacBook Pro 16"</td>
+                    <td>10249.00</td>
+                    <td>L001</td>
+                    <td><input type="checkbox" name="item" value="Apple MacBook Pro 16"></td>
+                    <td><input type="number" name="quantity_L001" min="1" max="10" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Apple MacBook Air 2024</td>
+                    <td>8249.00</td>
+                    <td>L002</td>
+                    <td><input type="checkbox" name="item" value="Apple MacBook Air 2024"></td>
+                    <td><input type="number" name="quantity_L002" min="1" max="10" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Apple MacBook Pro 14"</td>
+                    <td>9499.00</td>
+                    <td>L003</td>
+                    <td><input type="checkbox" name="item" value="Apple MacBook Pro 14"></td>
+                    <td><input type="number" name="quantity_L003" min="1" max="10" value="1"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="button" class="submit-btn" onclick="generateReceipt()">Submit Order</button>
+    </form>
+
+    <div id="receipt-output"></div>
+
+</body>
+</html>
